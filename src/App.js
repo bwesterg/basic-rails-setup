@@ -1,8 +1,10 @@
 import React, { Component } from 'react'; 
 import './App.css';
+import CandyList from './CandyList';
 
-class App extends Component() {
-  render() {
+
+class App extends Component {
+  render(){
     return (
       <div className="App">
       <header>  
@@ -11,18 +13,7 @@ class App extends Component() {
       <main>
         <section>
           <h2>Candies</h2>
-            <ul>
-              <li>
-                <div>
-                  <p>Skittles: $1.00</p>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <p>Maltesers: $1.50</p>
-                </div>
-              </li>
-            </ul>
+          <CandyList />
         </section>
       </main>
     </div>
